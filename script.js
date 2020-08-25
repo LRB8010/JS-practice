@@ -14,3 +14,17 @@ let isAPalindrome = (word) => {
 }
 isAPalindrome("racecar")
 
+let johnAge = 12
+
+let ageCategory = (age) => {
+    if(age <= 12){
+        console.log("This is a child")
+    } else if(age > 13 && age <= 19){
+        console.log("This is a teenager")
+    } else if(age > 20 && age <= 25){
+        console.log("This is a young adult")
+    } else{
+        console.log("This is an Adult")
+    }
+}
+ageCategory(johnAge)
