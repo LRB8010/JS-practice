@@ -54,3 +54,35 @@ let ageCategoryTernary = (age) => {
 }
 
 ageCategoryTernary(johnAge)
+
+let number = []
+let i = 1
+while(i <= 1000){
+number.push(i)
+i++
+}
+
+let p1 = document.querySelector("#P1")
+let p2 = document.querySelector("#P2")
+let W = document.querySelector("#Winner")
+let P1W = document.querySelector("#P1w")
+let P2W = document.querySelector("#P2w")
+
+
+
+document.querySelector("#random").addEventListener("click",() => {
+let a = Math.floor(Math.random() * 1000); 
+let b =  Math.floor(Math.random() * 1000); 
+p1.innerText = a
+p2.innerText = b
+if(a > b){
+    W.innerText = "<="
+    P1W.innerText++
+} else{
+    W.innerText = "=>"
+    P2W.innerText++
+}
+})
+
+
+console.log(number, i)
