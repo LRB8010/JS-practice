@@ -12,16 +12,16 @@ reverseString("racecar")
 let isAPalindrome = (word) => {
     {word === reverseString(word) ? console.log("This is a palindrome") : console.log("This is not a palindrome")}
 }
-isAPalindrome("racecar")
+isAPalindrome("dad")
 
-let johnAge = 34
+let johnAge = 10
 
 let ageCategory = (age) => {
     if(age <= 12){
         console.log("This is a child")
     } else if(age > 13 && age <= 19){
         console.log("This is a teenager")
-    } else if(age > 20 && age <= 25){
+    } else if(age >= 20 && age <= 25){
         console.log("This is a young adult")
     } else{
         console.log("This is an Adult")
@@ -45,3 +45,12 @@ let ageCategorySwitch = (age) => {
     }
 }
 ageCategorySwitch(johnAge)
+
+let ageCategoryTernary = (age) => {
+    {age <= 12 ? console.log("C")
+    : age >= 13 && age <=19 ? console.log("T")
+    : age >=20 && age <= 25 ? console.log("YA") 
+    : console.log("A")}
+}
+
+ageCategoryTernary(johnAge)
