@@ -67,71 +67,7 @@ let p2 = document.querySelector("#P2")
 let W = document.querySelector("#Winner")
 let P1W = document.querySelector("#P1w")
 let P2W = document.querySelector("#P2w")
-// let firstface = 
-// let b = document.createElement("span")
 
-// let dice = { one:
-//     a
-//     a.setAttribute("class","dice first-face")
-//     b
-// ,
-// 2:
-// <div class="dice second-face">
-//   <span class="dot">
-//   </span>
-//   <span class="dot">
-//   </span>
-// </div>,
-// 3:
-
-// <div class="dice third-face">
-//   <span class="dot"></span>
-//   <span class="dot"></span>
-//   <span class="dot"></span>
-// </div>,
-// 4:
-// <div class="fourth-face dice">
-//   <div class="column">
-//     <span class="dot"></span>
-//     <span class="dot"></span>
-//   </div>
-//   <div class="column">
-//     <span class="dot"></span>
-//     <span class="dot"></span>
-//   </div>
-// </div>,
-// 5:
-// <div class="fifth-face dice">
-  
-//   <div class="column">
-//     <span class="dot"></span>
-//     <span class="dot"></span>
-//   </div>
-  
-//   <div class="column">
-//     <span class="dot"></span>
-//   </div>
-  
-//   <div class="column">
-//     <span class="dot"></span>
-//     <span class="dot"></span>
-//   </div>
-// </div>,
-// 6:
-// <div class="sixth-face dice">
-//   <div class="column">
-//     <span class="dot"></span>
-//     <span class="dot"></span>
-//     <span class="dot"></span>
-//   </div>
-//   <div class="column">
-//     <span class="dot"></span>
-//     <span class="dot"></span>
-//     <span class="dot"></span>
-//   </div>
-
-// </div> 
-// }
 let dotz = document.createElement("span")
 let dot2z = document.createElement("span")
 let dot3z = document.createElement("span")
