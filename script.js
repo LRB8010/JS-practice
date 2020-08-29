@@ -10,7 +10,7 @@ reverseString("racecar")
 //First time
 
 let isAPalindrome = (word) => {
-    {word === reverseString(word) ? console.log("This is a palindrome") : console.log("This is not a palindrome")}
+    {word === reverseString(word) ? true : false}
 }
 isAPalindrome("dad")
 
@@ -175,6 +175,7 @@ document.querySelector("#random").addEventListener("click",() => {
     p2.innerHTML= ""
 let a = Math.floor(Math.random() * 7); 
 let b =  Math.floor(Math.random() * 7); 
+
 if(a === 1 || a === 0){
     dot1(p1)  
 } else if(a === 2){
@@ -201,13 +202,24 @@ if(b === 1 || b === 0){
 }else if(b === 6){
     dotSix(p2)
 }
-if(a > b){
-    W.innerText = "<="
-    P1W.innerText++
+if(b === 0 && a === 1 || a === 0 && b === 1){
+    W.innerText = "Tie"
+    
 } else if(b > a){
     W.innerText = "  =>"
     P2W.innerText++
-} else{ W.innerText = "Tie"}
+} else if(a>b){
+    W.innerText = "<="
+    P1W.innerText++
+} 
+else{ W.innerText = "Tie"}
+})
+
+let paliForm = document.querySelector("#palindrome")
+
+paliForm.addEventListener("submit",(e) => {
+ e.preventDefault()
+
 })
 
 
