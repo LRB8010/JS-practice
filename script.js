@@ -10,7 +10,11 @@ reverseString("racecar")
 //First time
 
 let isAPalindrome = (word) => {
-    {word === reverseString(word) ? true : false}
+    if(word === reverseString(word)){
+        return true 
+    }else{
+        return false
+    }
 }
 isAPalindrome("dad")
 
@@ -216,9 +220,16 @@ else{ W.innerText = "Tie"}
 })
 
 let paliForm = document.querySelector("#palindrome")
-
+let paliAnswer = document.querySelector("#paliAnswer")
 paliForm.addEventListener("submit",(e) => {
  e.preventDefault()
+ paliAnswer.innerText = ""
+ console.log(isAPalindrome(paliForm[0].value))
+ if(isAPalindrome(paliForm[0].value) === true){
+    paliAnswer.innerText = "This is a palindrome"
+ }else{
+     paliAnswer.innerText = "This is not a palindrome"
+ }
 
 })
 
