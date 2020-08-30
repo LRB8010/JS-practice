@@ -1,7 +1,7 @@
 console.log("Hello World!")
 
 let reverseString = (string) => {
-    let a = string.split("").reverse().join("")
+    let a = string.toLowerCase().replace(/[^\w]/gi, "").split("").reverse().join("")
     return a
     
 }
@@ -10,7 +10,8 @@ reverseString("racecar")
 //First time
 
 let isAPalindrome = (word) => {
-    if(word === reverseString(word)){
+    a = word.toLowerCase().replace(/[^\w]/gi, "").split("").join("")
+    if(a == reverseString(word)){
         return true 
     }else{
         return false
@@ -235,3 +236,5 @@ paliForm.addEventListener("submit",(e) => {
 
 
 
+let str = "A nut for a jar of tuna."
+console.log(str.toLowerCase().replace(/[^\w]/gi, "").split("").reverse().join(""))
