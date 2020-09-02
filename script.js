@@ -234,7 +234,16 @@ paliForm.addEventListener("submit",(e) => {
 
 })
 
+let cc = 4556364607935616
+let mask = (x) => {
 
 
-let str = "A nut for a jar of tuna."
-console.log(str.toLowerCase().replace(/[^\w]/gi, "").split("").reverse().join(""))
+let z = x.toString().split("")
+let q
+for(q = 0; q<x.toString().split("").length - 4;){
+    x[q] = "#"
+    i++
+}
+console.log(z)
+}
+mask(cc)
