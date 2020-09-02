@@ -239,11 +239,12 @@ let mask = (x) => {
 
 
 let z = x.toString().split("")
+let t = x.toString().split("").length - 4;
 let q
-for(q = 0; q<x.toString().split("").length - 4;){
-    x[q] = "#"
-    i++
+for(q = 0; q < t; ){
+    z[q] = "#";
+    q++;
 }
-console.log(z)
+console.log(z.join(""))
 }
 mask(cc)
