@@ -248,3 +248,7 @@ for(q = 0; q < t; ){
 console.log(z.join(""))
 }
 mask(cc)
+
+let isIsogram = (str) => {
+str.toLowerCase().split("")
+}
