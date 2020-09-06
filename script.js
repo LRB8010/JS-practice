@@ -250,5 +250,5 @@ console.log(z.join(""))
 mask(cc)
 
 let isIsogram = (str) => {
-str.toLowerCase().split("")
+str.toLowerCase().some(x => str.indexOf(x) !== str.lastIndexOf(x))
 }
