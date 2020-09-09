@@ -13,7 +13,12 @@ let reverseString2 = (str) => {
     }
     console.log(reversed)
 }
-reverseString2("racecar")
+
+let reverseString3 = (str) => {
+   let a = str.split('').reduce((rev,char) => char + rev ,"")
+   console.log(a)
+}
+reverseString3("racecar")
 
 //First time
 
