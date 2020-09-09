@@ -5,7 +5,15 @@ let reverseString = (string) => {
     return a
     
 }
-reverseString("racecar")
+
+let reverseString2 = (str) => {
+    reversed = ""
+    for(let char of str){
+        reversed = char + reversed;
+    }
+    console.log(reversed)
+}
+reverseString2("racecar")
 
 //First time
 
@@ -252,3 +260,4 @@ mask(cc)
 let isIsogram = (str) => {
 str.toLowerCase().some(x => str.indexOf(x) !== str.lastIndexOf(x))
 }
+
