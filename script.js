@@ -297,3 +297,15 @@ class Stack {
         return this.data[this.data.length - 1]
     }
 }
+
+// Linked List
+let nodeOne = {
+    data: 123
+};
+
+let nodeTwo = {
+    data: 123
+};
+
+nodeOne.next = nodeTwo;
+
