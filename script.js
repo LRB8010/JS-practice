@@ -277,4 +277,23 @@ class Queue {
     remove() {
        return this.data.pop();
     }
+    peek(){
+        return this.data[this.data.length - 1]
+    }
+}
+
+// Stack
+class Stack {
+    constructor(){
+        this.data = [];
+    }
+    add(record){
+        this.data.unshift(record)
+    }
+    remove(){
+        return this.data.shift()
+    }
+    peek(){
+        return this.data[this.data.length - 1]
+    }
 }
