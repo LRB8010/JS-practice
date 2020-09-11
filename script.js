@@ -266,3 +266,15 @@ let isIsogram = (str) => {
 str.toLowerCase().some(x => str.indexOf(x) !== str.lastIndexOf(x))
 }
 
+// Queue
+class Queue {
+    constructor() {
+        this.data = [];
+    }
+    add(record) {
+        this.data.unshift(record);
+    }
+    remove() {
+       return this.data.pop();
+    }
+}
