@@ -309,3 +309,27 @@ let nodeTwo = {
 
 nodeOne.next = nodeTwo;
 
+let bill1,bill2,bill3
+bill1 = 124
+bill2 = 48
+bill3 = 268
+
+let tip = (bill) => {
+if(bill < 50){
+    return bill * .20
+}else if(bill >= 50 && bill <= 200){
+   return bill * .15
+}else {
+   return bill * .10
+}
+}
+let tipCalculator = (bill1,bill2,bill3) => {
+tips = []
+finalCost = []
+tips.push(tip(bill1), tip(bill2), tip(bill3))
+console.log(tips)
+finalCost.push(bill1 + tips[0], bill2 + tips[1], bill3 + tips[2])
+console.log(finalCost)
+}
+
+tipCalculator(bill1,bill2,bill3)
